@@ -1,0 +1,34 @@
+#!/bin/zsh
+#
+# .zimrc - Zim configuration file.
+#
+
+# ---------- Base Zim modules ----------
+zmodule completion
+zmodule environment
+zmodule input
+
+# ---------- Base Zim plugins ----------
+zmodule archive
+zmodule fzf
+zmodule ssh
+zmodule termtitle
+zmodule utility
+
+# ---------- Completions plugins ----------
+zmodule zsh-users/zsh-completions --fpath src
+zmodule gradle/gradle-completion --fpath .
+
+# ---------- Prompt theme ----------
+zmodule romkatv/powerlevel10k
+
+# ---------- Otros plugins ----------
+zmodule ajeetdsouza/zoxide
+zmodule Aloxaf/fzf-tab
+zmodule mafredri/zsh-async
+
+# ---------- Plugins fish style ----------
+zmodule zsh-users/zsh-autosuggestions
+zmodule zdharma-continuum/fast-syntax-highlighting
+zmodule zsh-users/zsh-history-substring-search
+# zmodule marlonrichert/zsh-autocomplete
