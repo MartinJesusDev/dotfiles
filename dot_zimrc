@@ -20,10 +20,18 @@ zmodule gradle/gradle-completion --fpath .
 # ---------- Prompt theme ----------
 zmodule romkatv/powerlevel10k
 
+# ---------- Aliases ----------
+zmodule ohmyzsh/ohmyzsh --root plugins/eza
+zmodule ohmyzsh/ohmyzsh --root plugins/git
+zmodule ohmyzsh/ohmyzsh --root plugins/archlinux
+
 # ---------- Otros plugins ----------
 zmodule ajeetdsouza/zoxide
 zmodule Aloxaf/fzf-tab
 zmodule ohmyzsh/ohmyzsh --root plugins/ssh-agent
+zmodule ohmyzsh/ohmyzsh --root plugins/command-not-found
+zmodule ohmyzsh/ohmyzsh --root plugins/aliases
+zmodule ohmyzsh/ohmyzsh --root plugins/alias-finder
 
 # ---------- Plugins fish style ----------
 zmodule zsh-users/zsh-autosuggestions

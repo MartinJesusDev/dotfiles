@@ -4,14 +4,7 @@
 #
 
 # ---------- Navegación / edición ----------
-if [ -x "$(command -v eza)" ]; then
-  alias ls="eza"
-  alias la="eza --long --all --group"
-fi
 alias cd..='cd ..'
-alias ll='ls -lh'
-alias la='ls -lAh'
-alias ldot='ls -ld .*'
 alias npacman="sudo nano /etc/pacman.conf"
 alias ngrub="sudo nano /etc/default/grub"
 alias nmkinitcpio="sudo nano /etc/mkinitcpio.conf"
@@ -48,8 +41,3 @@ alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/p
 alias mirrores="sudo reflector -f 10 --sort rate --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
 alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
-
-# ---------- Aliases cortos ----------
-alias _=sudo
-alias l=ls
-alias g=git

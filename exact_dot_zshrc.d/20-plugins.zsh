@@ -23,6 +23,20 @@ zstyle ':autocomplete:*' delay 0.15  # seconds (float)
 zstyle ':autocomplete:*' timeout 1.2
 zstyle ':autocomplete:*' insert-unambiguous yes
 
+#---------- Plugin eza ----------
+zstyle ':omz:plugins:eza' 'dirs-first' yes
+zstyle ':omz:plugins:eza' 'git-status' yes
+zstyle ':omz:plugins:eza' 'header' yes
+zstyle ':omz:plugins:eza' 'icons' yes
+zstyle ':omz:plugins:eza' 'time-style' $TIME_STYLE
+zstyle ':omz:plugins:eza' 'hyperlink' yes
+
+# ---------- Plugin alias-finder ----------
+zstyle ':omz:plugins:alias-finder' autoload yes # disabled by default
+zstyle ':omz:plugins:alias-finder' longer yes # disabled by default
+zstyle ':omz:plugins:alias-finder' exact yes # disabled by default
+zstyle ':omz:plugins:alias-finder' cheaper yes # disabled by default
+
 # ---------- Inicialización de zimfw ----------
 zstyle ':zim:zmodule' use 'degit' # Use degit to fetch modules from GitHub, GitLab, etc.
 ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
