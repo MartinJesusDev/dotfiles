@@ -3,10 +3,10 @@
 # .zshrc - Zsh file loaded on interactive shell sessions.
 #
 
+# ---------- Mostrar información del sistema ----------
+command -v fastfetch >/dev/null 2>&1 && fastfetch
+
 # ---------- Cargar configuración modular ----------
 for config_file in ${ZDOTDIR:-$HOME}/.zshrc.d/*.zsh(N); do
   source "$config_file"
 done
-
-# ---------- Mostrar información del sistema ----------
-# command -v fastfetch >/dev/null 2>&1 && fastfetch

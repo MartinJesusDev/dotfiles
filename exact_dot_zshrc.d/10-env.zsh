@@ -13,6 +13,3 @@ export GIT_EDITOR='nano'
 # ---------- FZF Config ----------
 export FZF_BASE=/usr/share/fzf
 export FZF_DEFAULT_COMMAND='fd --hidden --follow'
-
-# ---------- Mapa de teclas favorito ----------
-bindkey -e

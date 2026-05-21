@@ -6,7 +6,6 @@
 # ---------- Base Zim modules ----------
 zmodule completion
 zmodule environment
-zmodule input
 
 # ---------- Base Zim plugins ----------
 zmodule archive
@@ -25,7 +24,6 @@ zmodule romkatv/powerlevel10k
 # ---------- Otros plugins ----------
 zmodule ajeetdsouza/zoxide
 zmodule Aloxaf/fzf-tab
-zmodule mafredri/zsh-async
 
 # ---------- Plugins fish style ----------
 zmodule zsh-users/zsh-autosuggestions

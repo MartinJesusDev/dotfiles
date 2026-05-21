@@ -12,7 +12,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # ---------- Plugin zimfw SSH ----------
-zstyle ':zim:ssh' ids 'id_github'
+zstyle ':zim:ssh' ids 'id_github_martinjesusdev'
 
 # ---------- Plugin zsh-autocomplete ----------
 zstyle ':autocomplete:*' delay 0.15  # seconds (float)
