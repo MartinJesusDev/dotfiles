@@ -11,8 +11,12 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# ---------- Plugin zimfw SSH ----------
-zstyle ':zim:ssh' ids 'id_github_martinjesusdev'
+# ---------- Plugin ssh-agent ----------
+zstyle :omz:plugins:ssh-agent agent-forwarding yes
+zstyle :omz:plugins:ssh-agent identities id_rsa id_github id_github_martinjesusdev
+zstyle :omz:plugins:ssh-agent helper ksshaskpass
+zstyle :omz:plugins:ssh-agent quiet yes
+zstyle :omz:plugins:ssh-agent lazy yes
 
 # ---------- Plugin zsh-autocomplete ----------
 zstyle ':autocomplete:*' delay 0.15  # seconds (float)
