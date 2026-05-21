@@ -15,7 +15,7 @@ alias update='sudo pacman -Syu'
 alias upall='yay -Syu'
 alias unlock='sudo rm /var/lib/pacman/db.lck'
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -100"
-# alias cleanup='sudo pacman -Rns $(pacman -Qtdq) && sudo rm -rf /var/cache/pacman/pkg/* && rm -rf ~/.cache/*'
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq) && sudo rm -rf /var/cache/pacman/pkg/* && rm -rf ~/.cache/*'
 
 # ---------- Utilidades ----------
 alias grep='grep --color=auto'
@@ -29,7 +29,7 @@ alias hw="hwinfo --short"
 alias fc='sudo fc-cache -fv' # add new fonts
 alias kc="killall conky"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-#alias install-grub="sudo grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB"
+alias install-grub="grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB --modules="tpm" --disable-shim-lock"
 alias hardcode-tray-kde="sudo -E hardcode-tray --conversion-tool RSVGConvert --size 22 --theme Papirus" # fix app indicator hardcoded icons KDE
 alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*' # check vulnerabilities microcode
 alias userlist="cut -d: -f1 /etc/passwd" # list all users on the system

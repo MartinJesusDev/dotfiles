@@ -153,6 +153,11 @@ bindkey "^[m" copy-prev-shell-word
 
 
 #---------- Binding personalizados y plugins ----------
+# Borrar como bash en Ctrl+W y Alt+Backspace
+bindkey '^W' bash-backward-kill-word
+bindkey '^[^?' bash-backward-kill-word
+
+# Búsqueda en el historial con PageUp/PageDown para plugin zsh-history-substring-search
 if (( ${+functions[history-substring-search-up]} && ${+functions[history-substring-search-down]} )); then
   # [PageUp] - Up a line of history
   if [[ -n "${terminfo[kpp]}" ]]; then
