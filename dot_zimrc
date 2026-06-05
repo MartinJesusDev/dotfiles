@@ -11,7 +11,6 @@ zmodule environment
 zmodule archive
 zmodule fzf
 zmodule termtitle
-zmodule utility
 
 # ---------- Completions plugins ----------
 zmodule zsh-users/zsh-completions --fpath src

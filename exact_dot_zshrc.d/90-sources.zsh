@@ -10,3 +10,7 @@ export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
 # ---------- Iniciar SDKMAN ----------
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# ---------- Iniciar Java ----------
+export JAVA_HOME="$HOME/.sdkman/candidates/java/current/"
+export PATH=$JAVA_HOME/bin:$PATH

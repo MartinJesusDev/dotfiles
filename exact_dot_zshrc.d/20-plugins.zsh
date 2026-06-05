@@ -16,7 +16,7 @@ zstyle :omz:plugins:ssh-agent agent-forwarding yes
 zstyle :omz:plugins:ssh-agent identities id_rsa id_github id_github_martinjesusdev
 zstyle :omz:plugins:ssh-agent helper ksshaskpass
 zstyle :omz:plugins:ssh-agent quiet yes
-zstyle :omz:plugins:ssh-agent lazy yes
+zstyle :omz:plugins:ssh-agent lazy no
 
 # ---------- Plugin zsh-autocomplete ----------
 zstyle ':autocomplete:*' delay 0.15  # seconds (float)
@@ -65,3 +65,8 @@ zstyle ':fzf-tab:complete:z:*' fzf-preview 'eza -ghla --group-directories-first 
 # ---------- Cargar configuración del prompt ----------
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# ---------- Fix para JetBrains Terminal con P10K ----------
+if [[ -n "$TERMINAL_EMULATOR" && "$TERMINAL_EMULATOR" == "JetBrains-JediTerm" ]] || [[ -n "$IDEA_INITIAL_DIRECTORY" ]]; then
+  export TERMINFO_DIRS=idea
+fi
