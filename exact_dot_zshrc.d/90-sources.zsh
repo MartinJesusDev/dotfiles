@@ -14,3 +14,10 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # ---------- Iniciar Java ----------
 export JAVA_HOME="$HOME/.sdkman/candidates/java/current/"
 export PATH=$JAVA_HOME/bin:$PATH
+
+# ---------- Iniciar PNPM ----------
+export PNPM_HOME="$HOME/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac

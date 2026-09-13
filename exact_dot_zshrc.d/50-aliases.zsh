@@ -41,3 +41,4 @@ alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/p
 alias mirrores="sudo reflector -f 10 --sort rate --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
 alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
+alias ratemirrors="rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist"
